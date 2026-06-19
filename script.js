@@ -1,4 +1,15 @@
+// ==========================
+// OPEN INVITATION
+// ==========================
 
+function openInvitation() {
+
+    document.getElementById("websiteContent")
+    .scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
 // ==========================
 // COUNTDOWN
 // ==========================
