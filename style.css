@@ -1,341 +1,110 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
+/* ===================================== */
+/* NEW WEDDING COLOR THEME */
+/* Dark Teal + Sea Green + Cream */
+/* ===================================== */
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:#fff8f8;
-    overflow-x:hidden;
-    color:#5c4b51;
+    background:#FDF6EC;
+    color:#0F4C5C;
 }
 
-/* ========================= */
-/* ENVELOPE */
-/* ========================= */
-
 .envelope-section{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
     background:linear-gradient(
         180deg,
-        #ffe8ef,
-        #fffdfd
+        #0F4C5C,
+        #4E9F8A,
+        #FDF6EC
     );
 }
 
-.envelope{
-    width:220px;
-    cursor:pointer;
-    transition:.4s;
-}
-
-.envelope:hover{
-    transform:scale(1.05);
-}
-
 .envelope-container h1{
-    margin-top:20px;
-    font-family:'Great Vibes',cursive;
-    font-size:55px;
-    color:#d68aa3;
+    color:#FDF6EC;
 }
 
 .envelope-container p{
-    margin-top:10px;
-}
-
-/* ========================= */
-/* COMMON */
-/* ========================= */
-
-section{
-    padding:80px 20px;
-}
-
-h1{
-    font-weight:500;
-}
-
-/* ========================= */
-/* GROOM + BRIDE */
-/* ========================= */
-
-.intro-section{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+    color:#ffffff;
 }
 
 .groom-section{
-    background:#fff7fa;
+    background:#FDF6EC;
 }
 
 .bride-section{
-    background:#fff2f6;
-}
-
-.intro-img{
-    width:300px;
-    height:380px;
-    object-fit:cover;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-
-.intro-content h1{
-    margin-top:25px;
-    font-size:28px;
+    background:#EAF7F3;
 }
 
 .intro-content h2{
-    font-family:'Great Vibes',cursive;
-    font-size:70px;
-    color:#d68aa3;
+    color:#0F4C5C;
 }
-
-/* ========================= */
-/* COUPLE */
-/* ========================= */
 
 .couple-section{
-    background:#fffdfd;
-    text-align:center;
-}
-
-.couple-img{
-    width:330px;
-    max-width:100%;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    background:#FFF9F2;
 }
 
 .couple-content h1{
-    margin-top:25px;
-    font-size:40px;
-    color:#d68aa3;
+    color:#0F4C5C;
 }
-
-.couple-content p{
-    margin-top:15px;
-    max-width:600px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.down-arrow{
-    margin-top:20px;
-    font-size:35px;
-    animation:bounce 1s infinite;
-}
-
-@keyframes bounce{
-    50%{
-        transform:translateY(10px);
-    }
-}
-
-/* ========================= */
-/* INVITATION CARD */
-/* ========================= */
 
 .invitation-section{
-    background:#fff5f8;
+    background:#EAF7F3;
 }
 
 .invitation-card{
-    max-width:450px;
-    margin:auto;
-    background:white;
-    border-radius:30px;
-    padding:40px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    background:#FDF6EC;
 }
 
 .card-heading{
-    text-transform:uppercase;
-    letter-spacing:3px;
-    color:#d6a2b3;
+    color:#4E9F8A;
 }
 
 .invitation-card h1{
-    margin-top:20px;
-    font-family:'Great Vibes',cursive;
-    font-size:75px;
-    color:#b96f8b;
-}
-
-.invitation-card h1 span{
-    display:block;
-    font-size:40px;
-}
-
-.verse{
-    margin-top:15px;
-    font-style:italic;
+    color:#0F4C5C;
 }
 
 .verse-ref{
-    color:#d68aa3;
-    margin-top:10px;
+    color:#4E9F8A;
 }
-
-.invite-text{
-    margin-top:20px;
-    line-height:1.8;
-}
-
-.card-image{
-    width:250px;
-    margin-top:25px;
-    border-radius:20px;
-}
-
-/* ========================= */
-/* SCRATCH */
-/* ========================= */
 
 .scratch-section{
-    background:#fffdfd;
-    text-align:center;
-}
-
-.scratch-container{
-    width:320px;
-    height:150px;
-    margin:30px auto;
-    position:relative;
+    background:#FFF9F2;
 }
 
 .hidden-date{
-    position:absolute;
-    width:100%;
-    height:100%;
-    background:#ffd7e5;
-    border-radius:20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:30px;
-    font-weight:bold;
+    background:#4E9F8A;
+    color:white;
 }
-
-#scratchCard{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-}
-
-/* ========================= */
-/* COUNTDOWN */
-/* ========================= */
 
 .countdown-section{
-    text-align:center;
-    background:#fff4f8;
-}
-
-.countdown{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-top:40px;
+    background:#EAF7F3;
 }
 
 .time-box{
-    width:90px;
-    background:white;
-    padding:20px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    background:#FDF6EC;
+    border:2px solid #4E9F8A;
 }
-
-.time-box span{
-    font-size:30px;
-    font-weight:bold;
-}
-
-/* ========================= */
-/* VENUE */
-/* ========================= */
 
 .venue-section{
-    background:#fff;
-}
-
-.venue-card{
-    max-width:500px;
-    margin:auto;
-    text-align:center;
+    background:#FFF9F2;
 }
 
 .venue-card h1{
-    font-family:'Great Vibes',cursive;
-    font-size:55px;
-    color:#d68aa3;
-}
-
-.venue-card h2{
-    margin:20px 0;
+    color:#0F4C5C;
 }
 
 .location-btn{
-    margin-top:25px;
-    border:none;
-    background:#d68aa3;
+    background:#0F4C5C;
     color:white;
-    padding:15px 25px;
-    border-radius:30px;
-    cursor:pointer;
-    font-size:16px;
 }
 
-/* ========================= */
-/* FOOTER */
-/* ========================= */
+.location-btn:hover{
+    background:#4E9F8A;
+}
 
 footer{
-    padding:40px;
-    text-align:center;
-    background:#ffe8ef;
+    background:#0F4C5C;
+    color:white;
 }
 
 footer h2{
-    font-family:'Great Vibes',cursive;
-    font-size:45px;
-}
-
-/* ========================= */
-/* MOBILE */
-/* ========================= */
-
-@media(max-width:768px){
-
-    .intro-img{
-        width:260px;
-        height:330px;
-    }
-
-    .intro-content h2{
-        font-size:55px;
-    }
-
-    .invitation-card h1{
-        font-size:55px;
-    }
-
-    .venue-card h1{
-        font-size:40px;
-    }
+    color:#FDF6EC;
 }
