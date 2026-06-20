@@ -1,21 +1,10 @@
 ```css
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
-
 body{
     font-family:'Poppins',sans-serif;
-    background:#FDF6EC;
+    background:#0F172A;
     overflow-x:hidden;
-    color:#5c4b51;
+    color:#FFF8E7;
 }
-
-/* ========================= */
-/* ENVELOPE */
-/* ========================= */
 
 .envelope-section{
     height:100vh;
@@ -25,136 +14,51 @@ body{
     text-align:center;
     background:linear-gradient(
         180deg,
-        #0F4C5C,
-        #FDF6EC
+        #2563EB,
+        #134E4A
     );
-}
-
-.envelope{
-    width:220px;
-    cursor:pointer;
-    transition:.4s;
-}
-
-.envelope:hover{
-    transform:scale(1.05);
 }
 
 .envelope-container h1{
     margin-top:20px;
     font-family:'Great Vibes',cursive;
     font-size:55px;
-    color:#4E9F8A;
-}
-
-.envelope-container p{
-    margin-top:10px;
-}
-
-/* ========================= */
-/* COMMON */
-/* ========================= */
-
-section{
-    padding:80px 20px;
-}
-
-h1{
-    font-weight:500;
-}
-
-/* ========================= */
-/* GROOM + BRIDE */
-/* ========================= */
-
-.intro-section{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+    color:#14B8A6;
 }
 
 .groom-section{
-    background:#FDF6EC;
+    background:#134E4A;
 }
 
 .bride-section{
-    background:#EAF7F3;
-}
-
-.intro-img{
-    width:300px;
-    height:380px;
-    object-fit:cover;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-
-.intro-content h1{
-    margin-top:25px;
-    font-size:28px;
+    background:#0F766E;
 }
 
 .intro-content h2{
     font-family:'Great Vibes',cursive;
     font-size:70px;
-    color:#4E9F8A;
+    color:#14B8A6;
 }
-
-/* ========================= */
-/* COUPLE */
-/* ========================= */
 
 .couple-section{
-    background:#FDF6EC;
+    background:#166534;
     text-align:center;
-}
-
-.couple-img{
-    width:330px;
-    max-width:100%;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
 .couple-content h1{
     margin-top:25px;
     font-size:40px;
-    color:#4E9F8A;
+    color:#14B8A6;
 }
-
-.couple-content p{
-    margin-top:15px;
-    max-width:600px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.down-arrow{
-    margin-top:20px;
-    font-size:35px;
-    animation:bounce 1s infinite;
-}
-
-@keyframes bounce{
-    50%{
-        transform:translateY(10px);
-    }
-}
-
-/* ========================= */
-/* INVITATION CARD */
-/* ========================= */
 
 .invitation-section{
-    background:#EAF7F3;
+    background:#134E4A;
 }
 
 .invitation-card{
     max-width:450px;
     margin:auto;
-    background:#FFFDF8;
+    background:#2563EB;
     border-radius:30px;
     padding:40px;
     text-align:center;
@@ -164,63 +68,31 @@ h1{
 .card-heading{
     text-transform:uppercase;
     letter-spacing:3px;
-    color:#4E9F8A;
+    color:#14B8A6;
 }
 
 .invitation-card h1{
     margin-top:20px;
     font-family:'Great Vibes',cursive;
     font-size:75px;
-    color:#0F4C5C;
-}
-
-.invitation-card h1 span{
-    display:block;
-    font-size:40px;
-}
-
-.verse{
-    margin-top:15px;
-    font-style:italic;
+    color:#FFF8E7;
 }
 
 .verse-ref{
-    color:#4E9F8A;
+    color:#14B8A6;
     margin-top:10px;
 }
 
-.invite-text{
-    margin-top:20px;
-    line-height:1.8;
-}
-
-.card-image{
-    width:250px;
-    margin-top:25px;
-    border-radius:20px;
-}
-
-/* ========================= */
-/* SCRATCH */
-/* ========================= */
-
 .scratch-section{
-    background:#FDF6EC;
+    background:#166534;
     text-align:center;
-}
-
-.scratch-container{
-    width:320px;
-    height:150px;
-    margin:30px auto;
-    position:relative;
 }
 
 .hidden-date{
     position:absolute;
     width:100%;
     height:100%;
-    background:#4E9F8A;
+    background:#0F766E;
     border-radius:20px;
     display:flex;
     justify-content:center;
@@ -229,72 +101,33 @@ h1{
     font-weight:bold;
 }
 
-#scratchCard{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-}
-
-/* ========================= */
-/* COUNTDOWN */
-/* ========================= */
-
 .countdown-section{
     text-align:center;
-    background:#EAF7F3;
-}
-
-.countdown{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-top:40px;
+    background:#134E4A;
 }
 
 .time-box{
     width:90px;
-    background:#FFFDF8;
+    background:#2563EB;
     padding:20px;
     border-radius:20px;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-.time-box span{
-    font-size:30px;
-    font-weight:bold;
-}
-
-/* ========================= */
-/* VENUE */
-/* ========================= */
-
 .venue-section{
-    background:#FFFDF8;
-}
-
-.venue-card{
-    max-width:500px;
-    margin:auto;
-    text-align:center;
+    background:#0F766E;
 }
 
 .venue-card h1{
     font-family:'Great Vibes',cursive;
     font-size:55px;
-    color:#4E9F8A;
-}
-
-.venue-card h2{
-    margin:20px 0;
+    color:#14B8A6;
 }
 
 .location-btn{
     margin-top:25px;
     border:none;
-    background:#0F4C5C;
+    background:#2563EB;
     color:white;
     padding:15px 25px;
     border-radius:30px;
@@ -302,41 +135,9 @@ h1{
     font-size:16px;
 }
 
-/* ========================= */
-/* FOOTER */
-/* ========================= */
-
 footer{
     padding:40px;
     text-align:center;
-    background:#0F4C5C;
+    background:#0F172A;
 }
-
-footer h2{
-    font-family:'Great Vibes',cursive;
-    font-size:45px;
-}
-
-/* ========================= */
-/* MOBILE */
-/* ========================= */
-
-@media(max-width:768px){
-
-    .intro-img{
-        width:260px;
-        height:330px;
-    }
-
-    .intro-content h2{
-        font-size:55px;
-    }
-
-    .invitation-card h1{
-        font-size:55px;
-    }
-
-    .venue-card h1{
-        font-size:40px;
-    }
-}
+```
