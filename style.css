@@ -1,28 +1,78 @@
-/* ===================================== */
-/* NEW WEDDING COLOR THEME */
-/* Dark Teal + Sea Green + Cream */
-/* ===================================== */
-
-body{
-    background:#FDF6EC;
-    color:#0F4C5C;
+```css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FDF6EC;
+    overflow-x:hidden;
+    color:#5c4b51;
+}
+
+/* ========================= */
+/* ENVELOPE */
+/* ========================= */
+
 .envelope-section{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
     background:linear-gradient(
         180deg,
         #0F4C5C,
-        #4E9F8A,
         #FDF6EC
     );
 }
 
+.envelope{
+    width:220px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.envelope:hover{
+    transform:scale(1.05);
+}
+
 .envelope-container h1{
-    color:#FDF6EC;
+    margin-top:20px;
+    font-family:'Great Vibes',cursive;
+    font-size:55px;
+    color:#4E9F8A;
 }
 
 .envelope-container p{
-    color:#ffffff;
+    margin-top:10px;
+}
+
+/* ========================= */
+/* COMMON */
+/* ========================= */
+
+section{
+    padding:80px 20px;
+}
+
+h1{
+    font-weight:500;
+}
+
+/* ========================= */
+/* GROOM + BRIDE */
+/* ========================= */
+
+.intro-section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
 .groom-section{
@@ -33,78 +83,260 @@ body{
     background:#EAF7F3;
 }
 
-.intro-content h2{
-    color:#0F4C5C;
+.intro-img{
+    width:300px;
+    height:380px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
+.intro-content h1{
+    margin-top:25px;
+    font-size:28px;
+}
+
+.intro-content h2{
+    font-family:'Great Vibes',cursive;
+    font-size:70px;
+    color:#4E9F8A;
+}
+
+/* ========================= */
+/* COUPLE */
+/* ========================= */
+
 .couple-section{
-    background:#FFF9F2;
+    background:#FDF6EC;
+    text-align:center;
+}
+
+.couple-img{
+    width:330px;
+    max-width:100%;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
 .couple-content h1{
-    color:#0F4C5C;
+    margin-top:25px;
+    font-size:40px;
+    color:#4E9F8A;
 }
+
+.couple-content p{
+    margin-top:15px;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.down-arrow{
+    margin-top:20px;
+    font-size:35px;
+    animation:bounce 1s infinite;
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(10px);
+    }
+}
+
+/* ========================= */
+/* INVITATION CARD */
+/* ========================= */
 
 .invitation-section{
     background:#EAF7F3;
 }
 
 .invitation-card{
-    background:#FDF6EC;
+    max-width:450px;
+    margin:auto;
+    background:#FFFDF8;
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
 }
 
 .card-heading{
+    text-transform:uppercase;
+    letter-spacing:3px;
     color:#4E9F8A;
 }
 
 .invitation-card h1{
+    margin-top:20px;
+    font-family:'Great Vibes',cursive;
+    font-size:75px;
     color:#0F4C5C;
+}
+
+.invitation-card h1 span{
+    display:block;
+    font-size:40px;
+}
+
+.verse{
+    margin-top:15px;
+    font-style:italic;
 }
 
 .verse-ref{
     color:#4E9F8A;
+    margin-top:10px;
 }
 
+.invite-text{
+    margin-top:20px;
+    line-height:1.8;
+}
+
+.card-image{
+    width:250px;
+    margin-top:25px;
+    border-radius:20px;
+}
+
+/* ========================= */
+/* SCRATCH */
+/* ========================= */
+
 .scratch-section{
-    background:#FFF9F2;
+    background:#FDF6EC;
+    text-align:center;
+}
+
+.scratch-container{
+    width:320px;
+    height:150px;
+    margin:30px auto;
+    position:relative;
 }
 
 .hidden-date{
+    position:absolute;
+    width:100%;
+    height:100%;
     background:#4E9F8A;
-    color:white;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    font-weight:bold;
 }
 
+#scratchCard{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+/* ========================= */
+/* COUNTDOWN */
+/* ========================= */
+
 .countdown-section{
+    text-align:center;
     background:#EAF7F3;
 }
 
-.time-box{
-    background:#FDF6EC;
-    border:2px solid #4E9F8A;
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:40px;
 }
 
+.time-box{
+    width:90px;
+    background:#FFFDF8;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.time-box span{
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* ========================= */
+/* VENUE */
+/* ========================= */
+
 .venue-section{
-    background:#FFF9F2;
+    background:#FFFDF8;
+}
+
+.venue-card{
+    max-width:500px;
+    margin:auto;
+    text-align:center;
 }
 
 .venue-card h1{
-    color:#0F4C5C;
+    font-family:'Great Vibes',cursive;
+    font-size:55px;
+    color:#4E9F8A;
+}
+
+.venue-card h2{
+    margin:20px 0;
 }
 
 .location-btn{
+    margin-top:25px;
+    border:none;
     background:#0F4C5C;
     color:white;
+    padding:15px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
 }
 
-.location-btn:hover{
-    background:#4E9F8A;
-}
+/* ========================= */
+/* FOOTER */
+/* ========================= */
 
 footer{
+    padding:40px;
+    text-align:center;
     background:#0F4C5C;
-    color:white;
 }
 
 footer h2{
-    color:#FDF6EC;
+    font-family:'Great Vibes',cursive;
+    font-size:45px;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:768px){
+
+    .intro-img{
+        width:260px;
+        height:330px;
+    }
+
+    .intro-content h2{
+        font-size:55px;
+    }
+
+    .invitation-card h1{
+        font-size:55px;
+    }
+
+    .venue-card h1{
+        font-size:40px;
+    }
 }
